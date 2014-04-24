@@ -2,14 +2,17 @@ public class Fibonanci {
     public void fibonanci(int a){
         int f = 0;
         int g = 1;
-        int jum = 0;
+        int[] j = new int[a+1];
 
         for(int i = 1; i <=a; i++)
         {
             f = f + g;
             g = f - g;
-            System.out.print(f + " ");
+            j[i]=f;
         }   
+        for(int i=a; i>0; i--){
+            System.out.print(j[i] + " ");
+        }
     }
     public static void main(String[] args) {
         Fibonanci j = new Fibonanci();

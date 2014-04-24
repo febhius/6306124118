@@ -8,9 +8,8 @@ public class Fibonanci {
         {
             f = f + g;
             g = f - g;
-            jum = jum+f;
-        }
-        System.out.println(jum);
+            System.out.print(f + " ");
+        }   
     }
     public static void main(String[] args) {
         Fibonanci j = new Fibonanci();

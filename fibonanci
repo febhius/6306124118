@@ -1,0 +1,21 @@
+public class Fibonanci {
+    public void fibonanci(int a){
+        int f = 0;
+        int g = 1;
+        int jum = 0;
+
+        for(int i = 1; i <=a; i++)
+        {
+            f = f + g;
+            g = f - g;
+            System.out.print(f + " ");
+        }   
+    }
+    public static void main(String[] args) {
+        Fibonanci j = new Fibonanci();
+        j.fibonanci(6);
+        System.out.println("");
+        j.fibonanci(9);
+    }
+    
+}
